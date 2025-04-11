@@ -12,7 +12,7 @@ function Navbar() {
 					to={"/"}
 					className="btn btn-soft btn-primary"
 				>
-					MyTikSave
+					MyTikSaver
 				</Link>
 				<button
 					className="md:hidden place-items-center grid btn btn-ghost ml-auto"
