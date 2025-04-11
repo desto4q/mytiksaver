@@ -1,10 +1,9 @@
 import {
-	isRouteErrorResponse,
-	Links,
+	isRouteErrorResponse, Links,
 	Meta,
 	Outlet,
 	Scripts,
-	ScrollRestoration,
+	ScrollRestoration
 } from "react-router";
 
 import type { Route } from "./+types/root";
@@ -41,6 +40,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 					name="viewport"
 					content="width=device-width, initial-scale=1"
 				/>
+				 <link rel="icon" type="image/png" href="/logo.png" />
+				 <meta property="og:image" content="/logo.png" />
 				<title>MyTikSaver</title>
 				<Meta />
 				<Links />
