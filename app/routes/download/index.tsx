@@ -8,6 +8,7 @@ import SearchBar from "~/components/SearchBar";
 import { nanoid } from "nanoid";
 import axios from "axios";
 import { toast } from "sonner";
+import Faqs from "~/components/Faqs";
 interface VIDEODATA {
 	region: string;
 	title: string;
@@ -218,6 +219,7 @@ function index() {
 				<SearchBar />
 			</div>
 			<h2>{}</h2>
+			<Faqs/>
 		</div>
 	);
 }

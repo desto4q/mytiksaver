@@ -1,22 +1,9 @@
 import { useAtom } from "jotai";
 import { LucideOctagon } from "lucide-react";
 import { Link } from "react-router";
-import { side_bar_atom } from "~/client/client_state";
+import { nav_links, side_bar_atom } from "~/client/client_state";
 
-let nav_links = [
-	{
-		link: "",
-		title: "Stream Movie",
-	},
-	{
-		link: "",
-		title: "Twitter Downloader",
-	},
-	{
-		link: "",
-		title: "Youtube Downloader",
-	},
-];
+
 
 function Sidebar() {
 	// let pathname = useLocation();
@@ -49,7 +36,7 @@ function Sidebar() {
 					>
 						<LucideOctagon />
 					</a>
-					<p className="text-md font-black"> Giin</p>
+					<p className="text-md font-black"> MytikSave</p>
 				</div>
 				<div className="md:block hidden mb-2  w-full"></div>
 
@@ -59,7 +46,7 @@ function Sidebar() {
 						return (
 							<Link
 								className={`btn btn-secondary btn-soft text-sm w-full justify-start text-left `}
-								to={"#"}
+								to={e.link}
 								key={e.title}
 							>
 								<p className="">{e.title}</p>
