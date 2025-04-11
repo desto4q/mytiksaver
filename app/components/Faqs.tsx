@@ -54,9 +54,15 @@ function Faqs() {
 			<h2 className="text-xl font-black mt-4">Instructions:</h2>
 			<div className="p-2 flex flex-col gap-2">
 				{instructions.map((e, i) => (
-					<div className="flex items-center flex-wrap ">
+					<div
+						className="flex items-center flex-wrap "
+						key={"int" + i}
+					>
 						<p className="mr-2 ">{i + 1}.</p>{" "}
-						<span className="font-black mr-2 text-nowrap"> {e.title}:</span>{" "}
+						<span className="font-black mr-2 text-nowrap">
+							{" "}
+							{e.title}:
+						</span>{" "}
 						<p>{e.body}</p>
 					</div>
 				))}
@@ -70,8 +76,11 @@ function Faqs() {
 			</p>
 
 			<div className="flex flex-col gap-4 p-4 mt-4">
-				{faqs.map((e) => (
-					<div className="flex flex-col gap-1">
+				{faqs.map((e,i) => (
+					<div
+						className="flex flex-col gap-1"
+						key={"faq" + i}
+					>
 						<h2 className="font-bold text-lg">Q: {e.question}</h2>
 						<p className="bold opacity-70">A: {e.answer}</p>
 					</div>

@@ -31,9 +31,6 @@ function index() {
 	let [url_string, setUrl] = useAtom(string_atom);
 	let [progress, setProgress] = useState(0);
 
-	useEffect(() => {
-		console.log("progress", progress);
-	}, [progress]);
 	let nav = useNavigate();
 	useEffect(() => {
 		if (url_string.length < 1) {
