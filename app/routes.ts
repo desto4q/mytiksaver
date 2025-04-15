@@ -13,7 +13,7 @@ export default remixRoutesOptionAdapter((defineRoutes) => {
 		//routeDir: 'routes',
 		//basePath: '/',
 		//paramPrefixChar: '$',
-		//nestedDirectoryChar: '+',
+		nestedDirectoryChar: '~',
 		//routeRegex: /((\${nestedDirectoryChar}[\/\\][^\/\\:?*]+)|[\/\\]((index|route|layout|page)|(_[^\/\\:?*]+)|([^\/\\:?*]+\.route)))\.(ts|tsx|js|jsx|md|mdx)$$/,
 	});
 });
